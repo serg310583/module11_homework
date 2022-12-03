@@ -6,3 +6,24 @@ describe("tests for countDown function", () => {
     expect(result).toBe(5,4,3,2,1);
   })  
 });
+
+describe("tests for countDown function", () => {
+  it("should countdown from the digit", () => {
+     const result = countDown ('5');
+    expect(result).toBe('5',4,3,2,1);
+  })  
+});
+
+describe("tests for countDown function", () => {
+  it("should countdown from the digit", () => {
+     const result = countDown (-3);
+    expect(result).toBe(undefined);
+  })  
+});
+
+describe("tests for countDown function", () => {
+  it("should countdown from the digit", () => {
+     const result = countDown ('two');
+    expect(result).toBe(undefined);
+  })  
+});
